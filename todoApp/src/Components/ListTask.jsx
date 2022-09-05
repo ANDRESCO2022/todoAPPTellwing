@@ -2,10 +2,10 @@ import { Task } from "./Task";
 
 export const ListTask = ({ tasks, setNewTask,delTasks }) => {
 	return (
-		<div className="md:w1/2 lg:w2/5 mx-5">
+		<div className="md:w-1/2 lg:w-2/5 mx-5 md:h-screen overflow-scroll">
 			{tasks && tasks.length ? (
 				<>
-					<h2 className="font-black text-center text 3xl mt-5">
+					<h2 className="font-black text-center text-3xl mb-10">
 						Tareas a realizar.
 					</h2>
 					{tasks.map((task) => {

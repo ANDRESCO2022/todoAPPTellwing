@@ -45,8 +45,8 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 		setDate("");
 	};
 	return (
-		<div className="md:w1/2 lg:w2/5 mx-5">
-			<h2 className="font-black text-center text 3xl mt-5">
+		<div className="md:w-1/2 lg:w-2/5 mx-5">
+			<h2 className="font-black text-center text-3xl mt-5">
 				Crear Tareas
 			</h2>
 
