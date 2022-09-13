@@ -46,7 +46,7 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 	};
 	return (
 		<div className="md:w-1/2 lg:w-2/5 mx-5">
-			<h2 className="font-black text-center text-3xl mt-5">
+			<h2 className="font-black text-center text-3xl mt-5 mb-3">
 				Crear Tareas
 			</h2>
 
@@ -60,13 +60,14 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 				<div className="md-5">
 					<label
 						htmlFor="titulo"
-						className="block text-gray-700 font-bold"
+						className="block text-gray-700 font-bold ml-2 "
 					>
-						Titulo
+						Titulo:
 					</label>
+
 					<input
 						id="titulo"
-						className="border-2 w-full p-2 mt-2 rounded-md placeholder-grey-700"
+						className="border-b-2 w-full p-2 mt-2 rounded-md placeholder-grey-700 focus:outline-none"
 						type="text"
 						placeholder="titulo de  la tarea"
 						value={title}
@@ -76,13 +77,13 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 				<div className="md-5">
 					<label
 						htmlFor="fecha"
-						className="block text-gray-700 font-bold"
+						className="block text-gray-700 font-bold ml-2"
 					>
-						Fecha
+						Fecha:
 					</label>
 					<input
 						id="fecha"
-						className="border-2 w-full p-2 mt-2 rounded-md placeholder-grey-700"
+						className="border-b-2 w-full p-2 mt-2 rounded-md placeholder-grey-700 focus:outline-none"
 						type="date"
 						placeholder="fecha de tarea"
 						value={date}
@@ -92,13 +93,13 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 				<div>
 					<label
 						htmlFor="descripcion"
-						className="block text-gray-700 font-bold"
+						className="block text-gray-700 font-bold ml-2"
 					>
-						Descripcion
+						Descripcion:
 					</label>
 					<textarea
 						id="titulo"
-						className="border-2 w-full p-2 mt-2 rounded-md placeholder-grey-700"
+						className="border-b-2 w-full p-2 mt-2 rounded-md placeholder-grey-700 mb-2 focus:outline-none"
 						type="text"
 						placeholder="Descripcion"
 						value={description}
@@ -108,13 +109,13 @@ export const Form = ({ task, setTask, newTask, setNewTask }) => {
 				{!newTask.id ? (
 					<input
 						type="submit"
-						className="bg-blue-600 w-full text-white font-bold redonded-md cursor-pointer"
+						className="bg-blue-700 w-full text-white text-xl font-bold rounded-lg cursor-pointer h-full"
 						value="crear tarea"
 					/>
 				) : (
 					<input
 						type="submit"
-						className="bg-green-600 w-full text-white font-bold redonded-md cursor-pointer"
+						className="bg-green-700 w-full text-white font-bold rounded-lg cursor-pointer h-full"
 						value="Actualizar Tarea"
 					/>
 				)}
